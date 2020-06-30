@@ -13,6 +13,7 @@
 		10FC8AD924AB043F00708242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FC8AD824AB043F00708242 /* Assets.xcassets */; };
 		10FC8ADC24AB043F00708242 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FC8ADB24AB043F00708242 /* Preview Assets.xcassets */; };
 		10FC8ADF24AB043F00708242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FC8ADD24AB043F00708242 /* LaunchScreen.storyboard */; };
+		10FC8AE724AB046400708242 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC8AE624AB046400708242 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		10FC8ADB24AB043F00708242 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10FC8ADE24AB043F00708242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10FC8AE024AB043F00708242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10FC8AE624AB046400708242 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				10FC8ADD24AB043F00708242 /* LaunchScreen.storyboard */,
 				10FC8AE024AB043F00708242 /* Info.plist */,
 				10FC8ADA24AB043F00708242 /* Preview Content */,
+				10FC8AE624AB046400708242 /* MapView.swift */,
 			);
 			path = "UTMConversion-iOS";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FC8AD324AB043B00708242 /* AppDelegate.swift in Sources */,
+				10FC8AE724AB046400708242 /* MapView.swift in Sources */,
 				10FC8AD524AB043B00708242 /* SceneDelegate.swift in Sources */,
 				10FC8AD724AB043B00708242 /* ContentView.swift in Sources */,
 			);
