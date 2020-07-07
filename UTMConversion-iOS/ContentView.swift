@@ -37,13 +37,15 @@ struct ContentView: View {
                 Text("UTM")
                 
                 HStack {
+                    
+                    
                     Text("Zone")
-                    Text("Unknown")
+                    Text("\(formatZone())")
                     .frame(width: 200)
                 }
                 HStack {
                     Text("Coordinates")
-                    Text("Unknown, Unknown")
+                    Text("\(formatUTMCoordinates())")
                     .frame(width: 200)
                 }
             }
@@ -52,6 +54,18 @@ struct ContentView: View {
         
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+    
+    private func formatZone() -> String {
+        let (zone, hem) = UTMZoneFromWGS84(longitude: centerCoordinate.longitude, latitude: centerCoordinate.latitude)
+        
+        return "\(zone)\(hem.capitalized)"
+    }
+    
+    private func formatUTMCoordinates() -> String {
+        let (easting, northing) = toEastingNorthing(longitude: centerCoordinate.longitude, latitude: centerCoordinate.latitude)
+        
+        return "\(easting.roundToDecimal(2)), \(northing.roundToDecimal(2))"
     }
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		10FC8ADC24AB043F00708242 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FC8ADB24AB043F00708242 /* Preview Assets.xcassets */; };
 		10FC8ADF24AB043F00708242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FC8ADD24AB043F00708242 /* LaunchScreen.storyboard */; };
 		10FC8AE724AB046400708242 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC8AE624AB046400708242 /* MapView.swift */; };
+		10FC8AEB24ADF6D800708242 /* Projections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC8AEA24ADF6D800708242 /* Projections.swift */; };
+		10FC8AED24B4427100708242 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC8AEC24B4427100708242 /* Extensions.swift */; };
+		ED8D2FF9DAFC55639CE6433B /* Pods_UTMConversion_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79B696EC3CB9C32FAE283F8 /* Pods_UTMConversion_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		10FC8ADE24AB043F00708242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10FC8AE024AB043F00708242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10FC8AE624AB046400708242 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		10FC8AE924ADF51E00708242 /* UTMConversion-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UTMConversion-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		10FC8AEA24ADF6D800708242 /* Projections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projections.swift; sourceTree = "<group>"; };
+		10FC8AEC24B4427100708242 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		282F5F58C59DC1FF32A49399 /* Pods-UTMConversion-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTMConversion-iOS.release.xcconfig"; path = "Target Support Files/Pods-UTMConversion-iOS/Pods-UTMConversion-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		973CE570A140D6FB52BE20C2 /* Pods-UTMConversion-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UTMConversion-iOS.debug.xcconfig"; path = "Target Support Files/Pods-UTMConversion-iOS/Pods-UTMConversion-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B79B696EC3CB9C32FAE283F8 /* Pods_UTMConversion_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UTMConversion_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8D2FF9DAFC55639CE6433B /* Pods_UTMConversion_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,8 @@
 			children = (
 				10FC8AD124AB043B00708242 /* UTMConversion-iOS */,
 				10FC8AD024AB043B00708242 /* Products */,
+				1E8637BC88F7076DE11488FD /* Pods */,
+				C22008CCD839E78E78CF9DB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,11 +73,14 @@
 				10FC8AD224AB043B00708242 /* AppDelegate.swift */,
 				10FC8AD424AB043B00708242 /* SceneDelegate.swift */,
 				10FC8AD624AB043B00708242 /* ContentView.swift */,
+				10FC8AE624AB046400708242 /* MapView.swift */,
+				10FC8AEA24ADF6D800708242 /* Projections.swift */,
+				10FC8AEC24B4427100708242 /* Extensions.swift */,
 				10FC8AD824AB043F00708242 /* Assets.xcassets */,
 				10FC8ADD24AB043F00708242 /* LaunchScreen.storyboard */,
 				10FC8AE024AB043F00708242 /* Info.plist */,
 				10FC8ADA24AB043F00708242 /* Preview Content */,
-				10FC8AE624AB046400708242 /* MapView.swift */,
+				10FC8AE924ADF51E00708242 /* UTMConversion-iOS-Bridging-Header.h */,
 			);
 			path = "UTMConversion-iOS";
 			sourceTree = "<group>";
@@ -78,6 +93,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1E8637BC88F7076DE11488FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				973CE570A140D6FB52BE20C2 /* Pods-UTMConversion-iOS.debug.xcconfig */,
+				282F5F58C59DC1FF32A49399 /* Pods-UTMConversion-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C22008CCD839E78E78CF9DB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B79B696EC3CB9C32FAE283F8 /* Pods_UTMConversion_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10FC8AE324AB043F00708242 /* Build configuration list for PBXNativeTarget "UTMConversion-iOS" */;
 			buildPhases = (
+				DB847CE9ED7F14DE161360C5 /* [CP] Check Pods Manifest.lock */,
 				10FC8ACB24AB043B00708242 /* Sources */,
 				10FC8ACC24AB043B00708242 /* Frameworks */,
 				10FC8ACD24AB043B00708242 /* Resources */,
+				647B5CAEAFC6A1ABA8EC85E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,12 +178,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		647B5CAEAFC6A1ABA8EC85E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UTMConversion-iOS/Pods-UTMConversion-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UTMConversion-iOS/Pods-UTMConversion-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UTMConversion-iOS/Pods-UTMConversion-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB847CE9ED7F14DE161360C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UTMConversion-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		10FC8ACB24AB043B00708242 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				10FC8AD324AB043B00708242 /* AppDelegate.swift in Sources */,
+				10FC8AED24B4427100708242 /* Extensions.swift in Sources */,
+				10FC8AEB24ADF6D800708242 /* Projections.swift in Sources */,
 				10FC8AE724AB046400708242 /* MapView.swift in Sources */,
 				10FC8AD524AB043B00708242 /* SceneDelegate.swift in Sources */,
 				10FC8AD724AB043B00708242 /* ContentView.swift in Sources */,
@@ -286,6 +364,7 @@
 		};
 		10FC8AE424AB043F00708242 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973CE570A140D6FB52BE20C2 /* Pods-UTMConversion-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samdravitzki.UTMConversion-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UTMConversion-iOS/UTMConversion-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,6 +386,7 @@
 		};
 		10FC8AE524AB043F00708242 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282F5F58C59DC1FF32A49399 /* Pods-UTMConversion-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +400,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samdravitzki.UTMConversion-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UTMConversion-iOS/UTMConversion-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
